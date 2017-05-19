@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'dancing-script-regular';
+  src: url('../font/dancing-script-regular.otf');
+}
+
+body {
+  font-family: dancing-script-regular;
+  background-color: #02010a;
+  -webkit-animation: intro 2s 1;
+  animation: intro 2s 1;
+}
+
+@-webkit-keyframes intro {
+  0% {
+    margin-top: 700px;
+  }
+  60% {
+    margin-top: -200px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+header {
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  padding: 25px;
+}
+
+header nav a {
+  text-decoration: underline;
+  color: white;
+  padding: 10px;
+}
+
+.primeraliga, .segundaliga, .terceraliga {
+  text-decoration: none;
+}
+
+section {
+  background-color: #82c3a6;
+  padding: 20px;
+}
+
+article {
+  width: 100%;
+  border: 1px solid rgb(130, 129, 14);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background-color: #d5c75f;
+}
+
+article div {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+article a {
+  color: #02010a;
+}
+
+#landscapeb img {
+  -webkit-transition-property: -webkit-transform: rotate, -webkit-filter: drop-shadow;
+  transition-property: -webkit-transform: rotate, -webkit-filter: drop-shadow;
+  transition-property: transform: rotate, filter: drop-shadow;
+  transition-property: transform: rotate, filter: drop-shadow, -webkit-transform: rotate, -webkit-filter: drop-shadow;
+  border;
+  -webkit-transition-duration: 0.5s, 0.5s, 0.5s;
+  transition-duration: 0.5s, 0.5s, 0.5s;
+}
+
+#landscapeb img:hover {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+  -webkit-filter: drop-shadow(5px 5px 5px #82c3a6);
+  filter: drop-shadow(5px 5px 5px #82c3a6);
+  border: 2px solid rgb(130, 129, 14);
+}
+
+#peliroja img {
+  -webkit-transition-property: -webkit-transform: translate, -webkit-filter: drop-shadow;
+  transition-property: -webkit-transform: translate, -webkit-filter: drop-shadow;
+  transition-property: transform: translate, filter: drop-shadow;
+  transition-property: transform: translate, filter: drop-shadow, -webkit-transform: translate, -webkit-filter: drop-shadow;
+  border;
+  -webkit-transition-duration: 0.5s, 0.5s, 0.5s;
+  transition-duration: 0.5s, 0.5s, 0.5s;
+}
+
+#peliroja img:hover {
+  -webkit-transform: translate(20px, -5px);
+  transform: translate(20px, -5px);
+  -webkit-filter: drop-shadow(5px 5px 5px #82c3a6);
+  filter: drop-shadow(5px 5px 5px #82c3a6);
+  border: 2px solid rgb(130, 129, 14);
+}
+
+#landscapeb, #peliroja {
+  width: 50%;
+}
+
+#cuadro1, #cuadro2, #cuadro3, #cuadro4, #cuadro5, #cuadro6 {
+  width: 33.3%;
+}
+
+#cuadro1 {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#secundario>div:nth-child(even) {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#cuadro3 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+footer {
+  color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+footer div {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#pie1, #pie2, #pie3, #pie4 {
+  width: 25%;
+  background-color: #C6d5c5;
+}
+
+footer div p img {
+  vertical-align: middle;
+  padding-right: 10px;
+  opacity: .5;
+}
+
+#pie1 img:hover, #pie3 img:hover {
+  opacity: 1;
+}
+
+#pie1 a:hover, #pie3 a:hover {
+  text-shadow: 0 0 5px white;
+  color: rgb(0, 214, 227);
+}
+
+footer div p a {
+  text-decoration: none;
+  color: #02010a;
+}
+
+img {
+  -webkit-filter: drop-shadow(2px 2px #02010a);
+  filter: drop-shadow(2px 2px #02010a);
+}
+
+#contenido {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 721px) {
+  #contenido {
+    width: 68%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  h2 {
+    display: inline;
+  }
+  nav {
+    float: right;
+    display: inline;
+  }
+}
+
+@media (min-width: 421px) and (max-width:720px) {
+  #contenido {
+    width: 100%;
+  }
+  header {
+    text-align: center;
+  }
+  #landscapeb, #peliroja, #pie1, #pie2, #pie3, #pie4 {
+    width: 100%;
+  }
+  #cuadro1, #cuadro2, #cuadro3, #cuadro4, #cuadro5, #cuadro6 {
+    width: 100%
+  }
+}
+
+@media (max-width:420px) {
+  #contenido {
+    width: 100%;
+  }
+  header {
+    text-align: center;
+  }
+  #landscapeb, #peliroja, #pie1, #pie2, #pie3, #pie4 {
+    width: 100%;
+  }
+  #cuadro1, #cuadro2, #cuadro3, #cuadro4, #cuadro5, #cuadro6 {
+    width: 100%
+  }
+}
